@@ -73,6 +73,9 @@
 @media screen and (max-width:774px){
     .cards{
        flex-direction: column;
+      .card{
+        width: 80%;
+      }
     }
    
     
