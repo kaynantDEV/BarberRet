@@ -1,0 +1,60 @@
+.map{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $neutral4;
+    padding-top: 150px;
+
+    h2{
+        color: $primary-normal;
+        font-size: 1.8em;
+        margin-bottom: 14px;
+    }
+    iframe{
+        width: 100%;
+    }
+}
+
+.rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    background-color: $primary-normal;
+    color: $neutral4;
+    padding: 28px;
+
+    nav{
+        display: flex;
+        align-items: center;
+        gap: 14px;
+
+        a{
+            color: $neutral4;
+            font-size: 1.5em;
+        }
+    }
+
+    span{
+        font-size: 0.8em;
+    }
+
+    .whatsapp{
+        position: fixed;
+        right: 20px;
+        bottom: 10px;
+        width: 70px;
+        animation: whatsapp 1s alternate infinite ease-in-out;
+    }
+    
+}
+
+@media screen and (max-width:774px){
+    .whatsapp{
+       width: 20px;
+    }
+   
+    
+}

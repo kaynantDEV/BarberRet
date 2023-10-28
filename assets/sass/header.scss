@@ -1,0 +1,60 @@
+
+
+header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 30px 30px;
+
+    nav{
+        display: flex;
+        gap: 14px;
+        
+        a{
+            font-size: 1.4em;
+            color: $neutral4;
+        }
+        a:hover{
+            color: $auxiliary-normal;
+            animation: icons 0.8s ease-in-out alternate infinite;
+
+        }
+    }
+
+    .logo{
+        max-width: 576px;
+        margin-top: -20px;
+    }
+
+    .header-button{
+        a{
+            padding: 10px 20px;
+            border: 1px solid $neutral4;
+            color: $neutral4;
+            transition: background-color 0.3s ease-in-out;
+        }
+        a:hover{
+            background-color: $auxiliary-normal;
+            border: 1px solid transparent;
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 774px){
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    i{
+        font-size: 1.3em;
+    }
+
+    .header-button{
+        display: none;
+    }
+}
